@@ -249,3 +249,14 @@ Crap from modules
 
 /** Skip navigation link **/
 .skip-navigation {display: none;}
+
+/** Remove default firefox outline **/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+
+:focus {
+  outline: black dotted thin;
+}
