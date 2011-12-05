@@ -246,3 +246,6 @@ Crap from modules
 
 /*i feel dirty*/
 .ui-dialog-content {width:250px !important;}
+
+/** Skip navigation link **/
+.skip-navigation {display: none;}
