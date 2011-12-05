@@ -49,10 +49,14 @@
 	#ting-search-result .types li,.types li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none;}
 		#ting-search-result .types li, .types li{font-size: 10px; padding:1px 3px; color: #fff; margin: 1px}
 		#ting-search-result .types li,.types li{background-color:#eee; color:#aaa;}
-		#ting-search-result .types li.available,.types li.available{background-color:#71bf44; color:#fff;}
+		#ting-search-result .types li.available,.types li.available{background-color:#71bf44; color:#fff; background-image: url(../images/icons/available.png); background-repeat: no-repeat; padding-left: 17px;}
 		#ting-search-result .types li.out,.types li.out{background-color: #f85f26; color:#fff;}
-		#ting-search-result .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff;}
+		#ting-search-result .types li.reserved,ul.types li.reserved{ background-color: #560036; /*#bc0028*/ color:#fff; background-image: url(../images/icons/reserved.png); background-repeat: no-repeat; padding-left: 17px;}	
 		#ting-search-result .ting-details {color:#bbb;}
+		
+		#ting-search-result .subjects li{clear:none; display:inline; float:left; margin:0 10px 0 0; padding:0; background:none; }
+		#ting-search-result .subjects h4{float: left; margin: 0 10px 0 0; font-size: 10px; color:#bbb;}
+		#ting-search-result .subjects li{display:inline; font-size: 10px; color:#bbb;}
 
 #content-result .taxonomy ul li{float:left; background:none; padding:0 10px 0 0;}
 #content-result .taxonomy ul {display:block;}
