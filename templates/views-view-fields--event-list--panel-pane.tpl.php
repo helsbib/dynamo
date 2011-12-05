@@ -4,6 +4,10 @@
  * Template to render a row from the event_list view.
  */
 
+// Insert title as alt text. Would like to do this in a preprocess function,
+// but this doesn't seem possible with current version of Views.
+$fields['field_list_image_fid']->content = str_replace('alt=""', 'alt="' . check_plain($fields['title']->raw) . '"', $fields['field_list_image_fid']->content);
+
 // Prepare a couple of variables.
 $start = date_make_date($fields['field_datetime_value']->raw);
 $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fields['field_entry_price_value']->raw) . ' kr.';
