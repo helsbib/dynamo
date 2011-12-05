@@ -46,22 +46,16 @@
 <?php endif; ?>
 
 */
-if ($field_type == 'ting_reference') {
-  $wrapper_tag = 'ul';
-}
-else {
-  $wrapper_tag = 'div';
-}
 ?>
-
 <?php if (!$field_empty) : ?>
-<<?php print $wrapper_tag ?> class="<?php print $field_name_css ?>">
-
+<div class="<?php print $field_name_css ?>">
   <?php if ($label_display == 'above') : ?>
     <span><?php print t($label) ?>:&nbsp;</span>
   <?php endif;?>
 
-
+    <?php if ($field_type == 'ting_reference'): ?>
+      <ul class="content">
+    <?php endif ?>
     <?php $count = 1;
     foreach ($items as $delta => $item) :
       if (!$item['empty']) : ?>
@@ -74,7 +68,9 @@ else {
       <?php $count++;
       endif;
     endforeach;?>
+    <?php if ($field_type == 'ting_reference'): ?>
+      </ul class="content">
+    <?php endif ?>
 
-
-</<?php print $wrapper_tag ?>>
+</div>
 <?php endif; ?>
