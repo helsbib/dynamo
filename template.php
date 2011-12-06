@@ -158,7 +158,13 @@ function dynamo_panels_pane($content, $pane, $display) {
       $classstr = ' ' . $content->css_class;
     }
 
-    $output = "<div class=\"panel-pane pane-$pane->subtype $classstr \"$idstr>\n";
+    $lang = '';
+    if ($content->type == 'node_content' && $content->module == 'node' && is_numeric($content->delta)) {
+      $node = node_load($content->delta);
+      $lang = 'lang="' . $node->language . '"';
+    }
+
+    $output = "<div class=\"panel-pane pane-$pane->subtype $classstr \"$idstr $lang>\n";
 
     if (!empty($content->title)) {
 
