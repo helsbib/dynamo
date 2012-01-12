@@ -69,7 +69,7 @@
       endif;
     endforeach;?>
     <?php if ($field_type == 'ting_reference'): ?>
-      </ul class="content">
+      </ul>
     <?php endif ?>
 
 </div>
