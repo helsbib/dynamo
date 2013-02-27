@@ -47,8 +47,8 @@
 		.field-ting-refs .subjects h4{float: left; margin: 0 10px 0 0; font-size: 10px; color:#bbb;}
 		.field-ting-refs .subjects li{display:inline; font-size: 10px; color:#bbb;}
 .field-ting-refs .subjects ul { clear:none; } /* overskriv ".node .content ul" i stylec.css  */
-ul.field-ting-refs { margin:0 ! important ; padding: 0 ! important; }
-ul.field-ting-refs li { clear:both; margin:0 0 20px 0; padding:10px 0 10px 10px; list-style-type: none ! important; }
+.field-ting-refs ul { margin:0 ! important ; padding: 0 ! important; }
+.field-ting-refs ul li { clear:both; margin:0 0 20px 0; padding:10px 0 10px 10px; list-style-type: none ! important; }
 .field-ting-refs img { margin: 0 ! important }
 .field-ting-refs { font-family:Arial,sans-serif; } /* dubliker regel i ui.all.css, override typography.css */
 
@@ -129,6 +129,10 @@ iframe.pc-booking { width: 100%; height: 100%; min-height: 600px;}
 #ting-search-result .ting-search-collection-types .unavailable {
   background-color: #f85f26;
   color:#fff;
+  background-image: url(../images/availability.png);
+  background-repeat: no-repeat;
+  background-position: 3px -17px;
+  padding-left: 17px;
 }
 
 
